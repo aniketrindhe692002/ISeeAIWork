@@ -1,0 +1,34 @@
+1. Alarm Set:  Allowing users to set alarms using voice commands can be incredibly useful 
+            for managing their schedules independently. Users should be able to specify the time, 
+            repeat frequency, and perhaps even customize alarm sounds.
+
+2. Medicine Text Recognition: This feature could utilize optical character recognition (OCR) technology 
+            to recognize text on medicine labels or prescriptions. The assistant could then read out the 
+            text aloud to the user, helping them identify their medications easily.
+
+3. Wikipedia Search Facility:  Integrating Wikipedia search functionality into the assistant would provide users with a wealth of knowledge
+                            at their fingertips. Users could ask questions or request information on various topics, 
+                            and the assistant could fetch relevant Wikipedia articles or summaries.
+
+4. Weather Updates: Provide users with real-time weather updates for their location. This can help them plan their outdoor 
+                    activities and dress appropriately.
+
+5. News Briefing:   Offer a feature where users can listen to brief news updates or headlines from reputable sources. 
+                    This keeps them informed about current events without the need to read lengthy articles.
+
+6. Voice Notes: Allow users to record and save voice notes for reminders, memos, or personal thoughts. 
+                These notes can be accessed and replayed whenever needed.
+
+7. Navigation Assistance: Integrate voice-guided navigation to help users navigate to different locations, 
+                such as their home, work, or other saved destinations. This can be particularly useful for users who 
+                are unfamiliar with their surroundings.
+
+8. Calendar Integration: Sync the assistant with users' calendars to provide reminders for appointments, events, and tasks. 
+                Users can add, edit, and manage their schedules using voice commands.
+
+9. Currency Conversion: Enable users to convert between different currencies by simply asking the assistant for the exchange 
+                rate or performing calculations.
+
+10. Language Translation: Incorporate a feature that translates phrases or words into different languages. 
+                This can help users communicate more effectively, especially when traveling or interacting with people 
+                from diverse backgrounds.
