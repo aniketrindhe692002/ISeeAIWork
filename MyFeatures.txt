@@ -1,4 +1,4 @@
-1. Alarm Set:  Allowing users to set alarms using voice commands can be incredibly useful 
+✅1. Alarm Set:  Allowing users to set alarms using voice commands can be incredibly useful 
             for managing their schedules independently. Users should be able to specify the time, 
             repeat frequency, and perhaps even customize alarm sounds.
 
