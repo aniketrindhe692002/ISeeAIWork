@@ -4,14 +4,15 @@ import Nav from './Nav';
 import './Component.css';
 import {TexttoVoice} from '../customHooks/TexttoVoice';
 import { SetAlarm } from '../customHooks/SetAlarm';
-import { Detection } from '../customHooks/Detection';
 import { ChatBot } from '../customHooks/ChatBot';
 import { NewsUpdate } from '../customHooks/NewsUpdate';
+import Camera from './Camera';
 
 function Body(props) {
 
   const [transcript, setTranscript] = useState('');
   const [listening, setListening] = useState(false);
+  const [camera , setCamera] = useState(false);
 
   const recognition = new window.webkitSpeechRecognition();
   recognition.continuous = false;
@@ -41,15 +42,17 @@ function Body(props) {
     TexttoVoice(text);  //Function to convert Text Into Voice 
   };
 
+
   if(transcript.toLowerCase().includes('set alarm')){
     SetAlarm(transcript,setTranscript);
-  }else if(transcript.toLowerCase().includes('open camera')){
-    Detection("Yo are in Detection part");
   }else if(transcript.toLowerCase().includes('news update')){
     NewsUpdate(transcript, setTranscript);
+  }else if(transcript.toLowerCase().includes('open camera')){
+    return(
+      <Camera transcript={transcript} setTranscript={setTranscript}/>
+    )
   }else{
-    ChatBot(transcript, setTranscript);
-    
+    console.log(transcript);
   }
 
 
@@ -65,4 +68,4 @@ function Body(props) {
   )
 }
 
-export default Body
+export default Body;

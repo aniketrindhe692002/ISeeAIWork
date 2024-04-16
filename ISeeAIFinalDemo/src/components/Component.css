@@ -11,8 +11,8 @@
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
-    border-bottom: 2px solid orangered;
-    box-shadow: 0 0 25px 0 rgb(223, 22, 22);
+    /* border-bottom: 2px solid orangered; */
+    /* box-shadow: 0 0 25px 0 rgb(223, 22, 22); */
     color: black;
     padding: 10px;
 }
@@ -76,22 +76,10 @@
 }
 
 
-.webcam-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 90%;
-    background-color: rgba(0, 0, 0, 0.8);
-    /* Semi-transparent black overlay */
-    z-index: 1000;
-    /* Ensure the camera is on top of other content */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-}
 
-.myphoto {
-    margin-top: -25%;
+/* Camera CSS Code */
+
+.webcam-container{
+    background-color: black;
+    height: 100vh;
 }

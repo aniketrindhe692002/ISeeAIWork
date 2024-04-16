@@ -42,4 +42,5 @@ export function SetAlarm(transcript, setTranscript) {
         TexttoVoice(`Alarm is set for ${time} minute`);
     }
 
+    return null;
 }
