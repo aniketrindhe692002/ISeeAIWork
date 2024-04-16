@@ -2,7 +2,7 @@
             for managing their schedules independently. Users should be able to specify the time, 
             repeat frequency, and perhaps even customize alarm sounds.
 
-2. Medicine Text Recognition: This feature could utilize optical character recognition (OCR) technology 
+✅2. Medicine Text Recognition: This feature could utilize optical character recognition (OCR) technology 
             to recognize text on medicine labels or prescriptions. The assistant could then read out the 
             text aloud to the user, helping them identify their medications easily.
 
