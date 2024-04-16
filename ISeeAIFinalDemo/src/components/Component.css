@@ -79,7 +79,42 @@
 
 /* Camera CSS Code */
 
-.webcam-container{
+.webcam-container {
     background-color: black;
     height: 100vh;
+}
+
+/* Voice Notes CSS */
+
+.voice-notes-container {
+    width: 100%;
+    max-width: 600px;
+    /* Adjust width as needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.voice-notes-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.voice-notes-box p {
+    margin: 0;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
 }

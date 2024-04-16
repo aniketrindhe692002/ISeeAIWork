@@ -86,7 +86,7 @@ const Camera = ({transcript , setTranscript}) => {
                         style={{marginTop:'50px'}}
                     />
                 </div>
-                {capturedImage && <img style={{marginTop:'0px', height:'250px', marginLeft:'70px', marginTop:'30px' , border:'5px solid white'}} src={capturedImage} alt="Captured" />}
+                {capturedImage && <img style={{height:'250px', marginLeft:'70px', marginTop:'30px' , border:'5px solid white'}} src={capturedImage} alt="Captured" />}
             </div>
         </>
     );

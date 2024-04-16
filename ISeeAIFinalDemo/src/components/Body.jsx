@@ -4,9 +4,10 @@ import Nav from './Nav';
 import './Component.css';
 import {TexttoVoice} from '../customHooks/TexttoVoice';
 import { SetAlarm } from '../customHooks/SetAlarm';
-import { ChatBot } from '../customHooks/ChatBot';
+// import { ChatBot } from '../customHooks/ChatBot';
 import { NewsUpdate } from '../customHooks/NewsUpdate';
 import Camera from './Camera';
+// import VoiceNotesComponent from './VoiceNotesComponent';
 
 function Body(props) {
 
@@ -17,7 +18,7 @@ function Body(props) {
   const recognition = new window.webkitSpeechRecognition();
   recognition.continuous = false;
   recognition.lang = 'en-IN';
-  recognition.maxAlternatives = 2;
+  recognition.maxAlternatives = 1;
 
   recognition.onstart = () => {
     console.log('Voice recognition started');
@@ -51,6 +52,23 @@ function Body(props) {
     return(
       <Camera transcript={transcript} setTranscript={setTranscript}/>
     )
+  }else if(transcript.toLowerCase().includes('current time')){  
+    let time = new Date();
+    let timeHr = time.getHours();
+    let timeMn = time.getMinutes();
+    let currTime = `Current Time is ${timeHr} hours & ${timeMn} Minutes`;
+    TexttoVoice(currTime);
+
+  }else if(transcript.toLowerCase().includes("today's date")){
+    const currentDate = new Date();
+    const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+    const day = dayNames[currentDate.getDay()];
+    const month = monthNames[currentDate.getMonth()];
+    const year = currentDate.getFullYear();
+    let currDate = `Today is ${day}, ${month}, ${year}`;
+    TexttoVoice(currDate);
   }else{
     console.log(transcript);
   }
