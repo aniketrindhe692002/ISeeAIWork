@@ -4,6 +4,8 @@ import Nav from './Nav';
 import './Component.css';
 import {TexttoVoice} from '../customHooks/TexttoVoice';
 import { SetAlarm } from '../customHooks/SetAlarm';
+import { Detection } from '../customHooks/Detection';
+import { ChatBot } from '../customHooks/ChatBot';
 
 function Body(props) {
 
@@ -39,7 +41,12 @@ function Body(props) {
   };
 
   if(transcript.toLowerCase().includes('set alarm')){
-      SetAlarm(transcript,setTranscript);
+    SetAlarm(transcript,setTranscript);
+  }else if(transcript.toLowerCase().includes('open camera')){
+    Detection("Yo are in Detection part");
+  }else{
+    ChatBot(transcript, setTranscript);
+    
   }
 
 
