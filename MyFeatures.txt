@@ -13,7 +13,7 @@
 4. Weather Updates: Provide users with real-time weather updates for their location. This can help them plan their outdoor 
                     activities and dress appropriately.
 
-5. News Briefing:   Offer a feature where users can listen to brief news updates or headlines from reputable sources. 
+✅5. News Briefing:   Offer a feature where users can listen to brief news updates or headlines from reputable sources. 
                     This keeps them informed about current events without the need to read lengthy articles.
 
 6. Voice Notes: Allow users to record and save voice notes for reminders, memos, or personal thoughts. 
@@ -32,3 +32,4 @@
 10. Language Translation: Incorporate a feature that translates phrases or words into different languages. 
                 This can help users communicate more effectively, especially when traveling or interacting with people 
                 from diverse backgrounds.
+11. Current Date & Time : Accessing current date and time
