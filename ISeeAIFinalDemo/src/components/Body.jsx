@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import logo from '../assets/voice.png';
 import Nav from './Nav';
 import './Component.css';
@@ -6,6 +6,7 @@ import {TexttoVoice} from '../customHooks/TexttoVoice';
 import { SetAlarm } from '../customHooks/SetAlarm';
 import { Detection } from '../customHooks/Detection';
 import { ChatBot } from '../customHooks/ChatBot';
+import { NewsUpdate } from '../customHooks/NewsUpdate';
 
 function Body(props) {
 
@@ -44,6 +45,8 @@ function Body(props) {
     SetAlarm(transcript,setTranscript);
   }else if(transcript.toLowerCase().includes('open camera')){
     Detection("Yo are in Detection part");
+  }else if(transcript.toLowerCase().includes('news update')){
+    NewsUpdate(transcript, setTranscript);
   }else{
     ChatBot(transcript, setTranscript);
     
