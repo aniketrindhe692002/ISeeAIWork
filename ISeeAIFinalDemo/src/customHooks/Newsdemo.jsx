@@ -15,9 +15,9 @@ export function Newsdemo(transcript, setTranscript) {
                     let title = data[i].title;
                     let desc = data[i].description;
                     console.log(desc);
-                    setTranscript(title);
-                    TexttoVoice("title :"+title);
-                    TexttoVoice("Description "+desc);
+                    // setTranscript(title);
+                    TexttoVoice(title);
+                    TexttoVoice(desc);
                 }
             })
     }
