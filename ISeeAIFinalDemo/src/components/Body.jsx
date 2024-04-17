@@ -7,6 +7,7 @@ import { SetAlarm } from '../customHooks/SetAlarm';
 // import { ChatBot } from '../customHooks/ChatBot';
 import { NewsUpdate } from '../customHooks/NewsUpdate';
 import Camera from './Camera';
+import { Newsdemo } from '../customHooks/Newsdemo';
 // import VoiceNotesComponent from './VoiceNotesComponent';
 
 function Body(props) {
@@ -47,7 +48,8 @@ function Body(props) {
   if(transcript.toLowerCase().includes('set alarm')){
     SetAlarm(transcript,setTranscript);
   }else if(transcript.toLowerCase().includes('news update')){
-    NewsUpdate(transcript, setTranscript);
+    // NewsUpdate(transcript, setTranscript);
+    Newsdemo(transcript, setTranscript);
   }else if(transcript.toLowerCase().includes('open camera')){
     return(
       <Camera transcript={transcript} setTranscript={setTranscript}/>
