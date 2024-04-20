@@ -53,6 +53,7 @@ function Body(props) {
   }else if(transcript.toLowerCase().includes('open camera')){
     return(
       <Camera transcript={transcript} setTranscript={setTranscript}/>
+      
     )
   }else if(transcript.toLowerCase().includes('current time')){  
     let time = new Date();

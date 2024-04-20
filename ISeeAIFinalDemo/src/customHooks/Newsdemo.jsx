@@ -15,7 +15,7 @@ export function Newsdemo(transcript, setTranscript) {
                     let title = data[i].title;
                     let desc = data[i].description;
                     console.log(desc);
-                    // setTranscript(title);
+                    setTranscript(title);
                     TexttoVoice(title);
                     TexttoVoice(desc);
                 }

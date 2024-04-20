@@ -1,10 +1,13 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Webcam from 'react-webcam';
 import Tesseract from 'tesseract.js';
 import wordsData from '../dataBase/mydata.json';
 import Nav from './Nav';
 import './Component.css';
 import { TexttoVoice } from '../customHooks/TexttoVoice';
+import "@tensorflow/tfjs-backend-cpu";
+import "@tensorflow/tfjs-backend-webgl";
+import * as cocoSsd from "@tensorflow-models/coco-ssd";
 
 const videoConstraints = {
     width: window.innerWidth, // Adjust width as needed
@@ -15,7 +18,7 @@ const videoConstraints = {
 const Camera = ({transcript , setTranscript}) => {
     const webcamRef = useRef(null);
     const [capturedImage, setCapturedImage] = useState(null);
-    const [detectedText, setDetectedText] = useState('');
+    const [detectedText, setDetectedText] = useState([]);
 
     const captureAndDetectText = async () => {
         const imageSrc = webcamRef.current.getScreenshot();
@@ -24,6 +27,7 @@ const Camera = ({transcript , setTranscript}) => {
         setDetectedText(text);
         matchWordInText(text, 'specific word');
     };
+
 
     const detectText = async (imageSrc) => {
         try {
@@ -35,6 +39,8 @@ const Camera = ({transcript , setTranscript}) => {
             return '';
         }
     };
+
+
     const matchWordInText = (text) => {
         // Clean the detected text: remove leading/trailing whitespace and punctuation, convert to lowercase
         const cleanedText = text.trim().replace(/[^\w\s]/g, '').toLowerCase();
@@ -68,6 +74,31 @@ const Camera = ({transcript , setTranscript}) => {
         }
     };
 
+    const detectObjectOnImage = async (imageSrc) => {
+        try {
+            const model = await cocoSsd.load();
+            const imageElement = document.createElement('img');
+            imageElement.src = imageSrc;
+            const predictions = await model.detect(imageElement);
+            setDetectedText(predictions);
+            // speakDetectedObjects(predictions);
+            console.log("Detected Object is :",predictions[0].class);
+            if(predictions[0].class===null){
+                TexttoVoice("No object is Detected");
+            }else{
+                TexttoVoice("Detected Object is ");
+                TexttoVoice(predictions[0].class);
+            }
+        } catch (error) {
+            console.error('Error detecting objects:', error);
+        }
+    };
+
+    useEffect(() => {
+        if (capturedImage) {
+            detectObjectOnImage(capturedImage);
+        }
+    }, [capturedImage]);
 
     return (
         <>
@@ -93,3 +124,5 @@ const Camera = ({transcript , setTranscript}) => {
 };
 
 export default Camera;
+
+
