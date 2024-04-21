@@ -73,6 +73,8 @@ function Body(props) {
     TexttoVoice(currDate);
   }else if(transcript.toLowerCase().includes("add reminder")){
       AddReminder(transcript);
+  }else if(transcript.toLowerCase().includes("introduce yourself")){
+    
   }else{
     console.log(transcript);
   }
