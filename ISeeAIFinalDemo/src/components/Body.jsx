@@ -4,11 +4,10 @@ import Nav from './Nav';
 import './Component.css';
 import {TexttoVoice} from '../customHooks/TexttoVoice';
 import { SetAlarm } from '../customHooks/SetAlarm';
-// import { ChatBot } from '../customHooks/ChatBot';
 import { NewsUpdate } from '../customHooks/NewsUpdate';
 import Camera from './Camera';
 import { Newsdemo } from '../customHooks/Newsdemo';
-// import VoiceNotesComponent from './VoiceNotesComponent';
+import { AddReminder } from '../customHooks/addReminder';
 
 function Body(props) {
 
@@ -72,6 +71,8 @@ function Body(props) {
     const year = currentDate.getFullYear();
     let currDate = `Today is ${day}, ${month}, ${year}`;
     TexttoVoice(currDate);
+  }else if(transcript.toLowerCase().includes("add reminder")){
+      AddReminder(transcript);
   }else{
     console.log(transcript);
   }
