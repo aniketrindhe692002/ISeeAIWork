@@ -1,5 +1,5 @@
 import React from 'react';
-import alarmAudio from '../assets/alarm-clock-short-6402.mp3';
+import alarmAudio from '../assets/alarm-clock-short-6402.mp3'
 import { TexttoVoice } from './TexttoVoice';
 
 export function SetAlarm(transcript, setTranscript) {

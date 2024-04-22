@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Webcam from 'react-webcam';
 import Tesseract from 'tesseract.js';
-import wordsData from '../dataBase/mydata.json';
+import wordsData from '../dataBase/medicines.json';
 import Nav from './Nav';
 import './Component.css';
 import { TexttoVoice } from '../customHooks/TexttoVoice';
@@ -46,11 +46,10 @@ const Camera = ({transcript , setTranscript}) => {
         const cleanedText = text.trim().replace(/[^\w\s]/g, '').toLowerCase();
 
         // Iterate over the entries in the JSON data
+        console.log("CLeanedText : ",cleanedText);
         const matchedWords = wordsData.filter(word => {
             // Clean the word from JSON data: remove leading/trailing whitespace and punctuation, convert to lowercase
             const cleanedWord = word.name.trim().replace(/[^\w\s]/g, '').toLowerCase();
-
-            // Check if the cleaned word exists in the cleaned detected text
             return cleanedText.includes(cleanedWord);
         });
 

@@ -4,12 +4,10 @@ import Nav from './Nav';
 import './Component.css';
 import { TexttoVoice } from '../customHooks/TexttoVoice';
 import { SetAlarm } from '../customHooks/SetAlarm';
-import { NewsUpdate } from '../customHooks/NewsUpdate';
 import Camera from './Camera';
 import { Newsdemo } from '../customHooks/Newsdemo';
 import { AddReminder } from '../customHooks/addReminder';
-import introVoice from '../assets/introVoice.mp3';
-import ChatBot from './ChatBot';
+import ChatComponent from './ChatComponent';
 
 function Body(props) {
 
@@ -46,7 +44,6 @@ function Body(props) {
     TexttoVoice(text);  //Function to convert Text Into Voice 
   };
 
-
   if (transcript.toLowerCase().includes('set alarm')) {
     SetAlarm(transcript, setTranscript);
   } else if (transcript.toLowerCase().includes('news update')) {
@@ -77,8 +74,10 @@ function Body(props) {
   } else if (transcript.toLowerCase().includes("add reminder")) {
     AddReminder(transcript);
   } else {
-    console.log(transcript);
+    // handleSend();
+    console.log(transcript)
   }
+
 
   return (
     <>
