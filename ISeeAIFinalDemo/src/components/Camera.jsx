@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Webcam from 'react-webcam';
 import Tesseract from 'tesseract.js';
-import wordsData from '../dataBase/medicines.json';
+import wordsData from '../dataBase/samplemedicine.json';
 import Nav from './Nav';
 import './Component.css';
 import { TexttoVoice } from '../customHooks/TexttoVoice';
