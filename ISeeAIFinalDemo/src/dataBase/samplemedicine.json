@@ -1,64 +1,56 @@
-{
-    "medicines": [
-        {
-            "id": 1,
-            "name": "Actemra",
-            "description": "Actemra, or tocilizumab, is a medication used to treat rheumatoid arthritis and certain other autoimmune conditions. It works by inhibiting the action of interleukin-6 (IL-6), a protein associated with inflammation. Actemra is often prescribed to help manage symptoms and improve joint function in patients with these conditions.",
-            "image_link": "https://assets.roche.com/f/169232/1024x681/77d3dbc95b/actemra.jpg"
-        },
-        {
-            "id": 2,
-            "name": "Actemra",
-            "description": "Actemra, or tocilizumab, is a medication used to treat rheumatoid arthritis and certain other autoimmune conditions. It works by inhibiting the action of interleukin-6 (IL-6), a protein associated with inflammation. Actemra is often prescribed to help manage symptoms and improve joint function in patients with these conditions.",
-            "image_link": "https://assets.roche.com/f/169232/1024x681/77d3dbc95b/actemra.jpg"
-        },
-        {
-          "id": 3,
-          "name": "Bacitracin",
-          "description": "Bacitracin is an antibiotic ointment used to prevent and treat bacterial skin infections. It works by stopping the growth of bacteria on the skin, helping wounds to heal faster and reducing the risk of infection. It's commonly applied to minor cuts, scrapes, and burns after cleaning the affected area.",
-          "image_link": "https://img.medscapestatic.com/pi/features/drugdirectory/octupdate/ALT00260.jpg"
-        },
-        {
-          "id": 4,
-          "name": "Baclofen",
-          "description": "Baclofen is a medication commonly used to treat muscle spasms and stiffness caused by conditions like multiple sclerosis or spinal cord injuries. It works by acting on the nerves in the spinal cord to relax muscles, helping to alleviate discomfort and improve movement.",
-          "image_link": "https://5.imimg.com/data5/SELLER/Default/2022/6/GU/YD/FP/145721172/baclofen-tablets-ip.jpg"
-        },
-        {
-          "id": 5,
-          "name": "Caplyta",
-          "description": "Caplyta is a prescription medication used to treat schizophrenia in adults. It works by affecting certain chemicals in the brain to help reduce symptoms like hallucinations, delusions, and disorganized thinking. It comes in tablet form and is taken by mouth once daily.",
-          "image_link": "https://www.drugs.com/pro/images/db730b06-6351-47fd-8183-e61e61bbead5/caplyta-9.jpg"
-        },
-        {
-          "id": 6,
-          "name": "Femara",
-          "description": "Femara is a medication prescribed to treat certain types of breast cancer in postmenopausal women. It works by lowering estrogen levels in the body, which can slow or stop the growth of cancer cells. Femara is usually taken orally once a day, as directed by a doctor.",
-          "image_link": "https://5.imimg.com/data5/SELLER/Default/2023/5/306914359/DQ/IY/JY/72616798/femara-2-5-mg-tablets.webp"
-        },
-        {
-          "id": 7,
-          "name": "Hydroxyzine",
-          "description": "Hydroxyzine is a medication commonly prescribed to treat anxiety and relieve itching caused by allergic reactions. It works by blocking certain natural substances in the body that can cause symptoms like itching, anxiety, and tension. It comes in various forms, including tablets, capsules, and syrups, and is usually taken by mouth.",
-          "image_link": "https://5.imimg.com/data5/SELLER/Default/2021/2/SU/RS/AL/122759928/hydroxyzine-hydrochloride-10-mg.jpeg"
-        },
-        {
-          "id": 8,
-          "name": "Ketalar",
-          "description": "Ketalar is a medication primarily used as an anesthetic during surgeries or medical procedures. It belongs to a class of drugs called general anesthetics and works by slowing down brain activity to induce unconsciousness. Ketalar is administered by injection and is typically used under medical supervision in controlled settings.",
-          "image_link": "https://imgcdn.mckesson.com/CumulusWeb/Images/Original_Image/494158_front.jpg"
-        },
-        {
-          "id": 9,
-          "name": "Medrol",
-          "description": "Medrol is a medication that contains the active ingredient methylprednisolone, which belongs to a group of medicines called corticosteroids. It is used to treat a variety of conditions such as inflammation, allergic reactions, and autoimmune disorders by reducing swelling, pain, and allergic reactions in the body.",
-          "image_link": "https://vinmec-prod.s3.amazonaws.com/images/20220326_081250_786981_medrol-la-thuoc-gi.max-1800x1800.jpg"
-        },
-        {
-          "id": 10,
-          "name": "Melatonin",
-          "description": "Melatonin is a hormone that your body naturally produces to regulate sleep-wake cycles. It's commonly used as a supplement to help with sleep problems, such as insomnia or jet lag. Taking melatonin supplements can help signal to your body that it's time to sleep.",
-          "image_link": "https://m.media-amazon.com/images/I/712ZgHasrcL._AC_UF1000,1000_QL80_.jpg"
-        }
-    ]
-}
+[
+  {
+    "id": 1,
+    "name": "Actemra",
+    "description": "Actemra, or tocilizumab, is a medication used to treat rheumatoid arthritis and certain other autoimmune conditions. It works by inhibiting the action of interleukin-6 (IL-6), a protein associated with inflammation. Actemra is often prescribed to help manage symptoms and improve joint function in patients with these conditions.",
+    "image_link": "https://assets.roche.com/f/169232/1024x681/77d3dbc95b/actemra.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Bacitracin",
+    "description": "Bacitracin is an antibiotic ointment used to prevent and treat bacterial skin infections. It works by stopping the growth of bacteria on the skin, helping wounds to heal faster and reducing the risk of infection. It's commonly applied to minor cuts, scrapes, and burns after cleaning the affected area.",
+    "image_link": "https://img.medscapestatic.com/pi/features/drugdirectory/octupdate/ALT00260.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Baclofen",
+    "description": "Baclofen is a medication commonly used to treat muscle spasms and stiffness caused by conditions like multiple sclerosis or spinal cord injuries. It works by acting on the nerves in the spinal cord to relax muscles, helping to alleviate discomfort and improve movement.",
+    "image_link": "https://5.imimg.com/data5/SELLER/Default/2022/6/GU/YD/FP/145721172/baclofen-tablets-ip.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Caplyta",
+    "description": "Caplyta is a prescription medication used to treat schizophrenia in adults. It works by affecting certain chemicals in the brain to help reduce symptoms like hallucinations, delusions, and disorganized thinking. It comes in tablet form and is taken by mouth once daily.",
+    "image_link": "https://www.drugs.com/pro/images/db730b06-6351-47fd-8183-e61e61bbead5/caplyta-9.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Femara",
+    "description": "Femara is a medication prescribed to treat certain types of breast cancer in postmenopausal women. It works by lowering estrogen levels in the body, which can slow or stop the growth of cancer cells. Femara is usually taken orally once a day, as directed by a doctor.",
+    "image_link": "https://5.imimg.com/data5/SELLER/Default/2023/5/306914359/DQ/IY/JY/72616798/femara-2-5-mg-tablets.webp"
+  },
+  {
+    "id": 6,
+    "name": "Hydroxyzine",
+    "description": "Hydroxyzine is a medication commonly prescribed to treat anxiety and relieve itching caused by allergic reactions. It works by blocking certain natural substances in the body that can cause symptoms like itching, anxiety, and tension. It comes in various forms, including tablets, capsules, and syrups, and is usually taken by mouth.",
+    "image_link": "https://5.imimg.com/data5/SELLER/Default/2021/2/SU/RS/AL/122759928/hydroxyzine-hydrochloride-10-mg.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Ketalar",
+    "description": "Ketalar is a medication primarily used as an anesthetic during surgeries or medical procedures. It belongs to a class of drugs called general anesthetics and works by slowing down brain activity to induce unconsciousness. Ketalar is administered by injection and is typically used under medical supervision in controlled settings.",
+    "image_link": "https://imgcdn.mckesson.com/CumulusWeb/Images/Original_Image/494158_front.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Medrol",
+    "description": "Medrol is a medication that contains the active ingredient methylprednisolone, which belongs to a group of medicines called corticosteroids. It is used to treat a variety of conditions such as inflammation, allergic reactions, and autoimmune disorders by reducing swelling, pain, and allergic reactions in the body.",
+    "image_link": "https://vinmec-prod.s3.amazonaws.com/images/20220326_081250_786981_medrol-la-thuoc-gi.max-1800x1800.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Melatonin",
+    "description": "Melatonin is a hormone that your body naturally produces to regulate sleep-wake cycles. It's commonly used as a supplement to help with sleep problems, such as insomnia or jet lag. Taking melatonin supplements can help signal to your body that it's time to sleep.",
+    "image_link": "https://m.media-amazon.com/images/I/712ZgHasrcL._AC_UF1000,1000_QL80_.jpg"
+  }
+]
