@@ -9,6 +9,7 @@ import Camera from './Camera';
 import { Newsdemo } from '../customHooks/Newsdemo';
 import { AddReminder } from '../customHooks/addReminder';
 import introVoice from '../assets/introVoice.mp3';
+import ChatBot from './ChatBot';
 
 function Body(props) {
 
