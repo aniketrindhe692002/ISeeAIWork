@@ -37,6 +37,7 @@ export const AddReminder = (command) => {
         } else {
             console.error('Invalid command. Please include the time duration.');
         }
+        
     }
 };
 

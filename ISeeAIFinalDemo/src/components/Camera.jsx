@@ -116,8 +116,7 @@ const Camera = ({transcript , setTranscript}) => {
 
     return (
         <>
-            <div className='webcam-container'>
-                <Nav />
+            <div className='webcam-container' style={{zIndex:10000}}>
                 <div className="photoTake">
                     <Webcam
                         className="myphoto"
@@ -128,10 +127,10 @@ const Camera = ({transcript , setTranscript}) => {
                         width={videoConstraints.width}
                         videoConstraints={videoConstraints}
                         onClick={captureAndDetectText}
-                        style={{marginTop:'50px'}}
+                        style={{marginTop:'10px'}}
                     />
                 </div>
-                {capturedImage && <img style={{height:'250px', marginLeft:'70px', marginTop:'30px' , border:'5px solid white'}} src={capturedImage} alt="Captured" />}
+                {capturedImage && <img style={{height:'250px', marginLeft:'70px', marginTop:'10px' , border:'5px solid white'}} src={capturedImage} alt="Captured" />}
             </div>
         </>
     );
